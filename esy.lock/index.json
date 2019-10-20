@@ -1,0 +1,33 @@
+{
+  "checksum": "96c1babe12fb0e3c24ac430236c0d1a3",
+  "root": "esy-sdl2-image@link-dev:./package.json",
+  "node": {
+    "esy-sdl2-image@link-dev:./package.json": {
+      "id": "esy-sdl2-image@link-dev:./package.json",
+      "name": "esy-sdl2-image",
+      "version": "link-dev:./package.json",
+      "source": {
+        "type": "link-dev",
+        "path": ".",
+        "manifest": "package.json"
+      },
+      "overrides": [],
+      "dependencies": [ "esy-sdl2@2.0.10004@d41d8cd9" ],
+      "devDependencies": []
+    },
+    "esy-sdl2@2.0.10004@d41d8cd9": {
+      "id": "esy-sdl2@2.0.10004@d41d8cd9",
+      "name": "esy-sdl2",
+      "version": "2.0.10004",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://registry.npmjs.org/esy-sdl2/-/esy-sdl2-2.0.10004.tgz#sha1:099759847d2e33258d80bdeeb536cf1d4cc98fa5"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    }
+  }
+}
