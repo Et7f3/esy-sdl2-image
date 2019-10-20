@@ -1,10 +1,11 @@
 {
   "name": "esy-sdl2-image",
-  "version": "2.0.5",
+  "version": "2.0.5001",
   "description": "Esy-enabled SDL Image 2 build",
   "license": "MIT",
   "esy": {
     "build": [
+      "find ./ -exec touch -t 200905010101 {} +",
       ["bash", "-c", "#{os == 'windows' ? 'WINDRES=x86_64-w64-mingw32-windres PKG_CONFIG_PATH=$(cygpath $SDL2_LIB_PATH/pkgconfig):$PKG_CONFIG_PATH ' : ''}./configure --prefix=#{self.install} #{os == 'windows' ? '--host x86_64-w64-mingw32' : ''}"],
       "make",
       "make install"
